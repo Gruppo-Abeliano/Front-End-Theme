@@ -1,35 +1,128 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <title>title</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="imgs/logo.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&display=swap" rel="stylesheet">
-    <script src="script.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+    <title>Gruppo Abeliano</title>
   </head>
   <body>
   <div id="main_page_div">
       <div id="main_page_header_div">
           <div id="header_div_site">
-              <div id="header_logo_and_name">
-                  <div id="header_logo">
-                      <img src="imgs/icon.jpeg">
+              <nav class="navbar navbar-expand-lg">
+                  <img src="imgs/logo.jpeg" class="img-fluid" id="logo_img" alt="Logo">
+                  <div id="brand_div" class="d-none d-md-none d-lg-block d-xl-block">
+                      <a class="navbar-brand" href="#">GRUPPO<br>ABELIANO</a>
                   </div>
-                  <div id="header_name">
-                      <h3>GRUPPO<br>ABELIANO</h3>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav ml-auto">
+                          <li class="nav-item">
+                                <a class="nav-link active" href="#">PROGETTI</a>
+                          </li>
+                          <li class="nav-item">
+                                <a class="nav-link" href="#">NEWS</a>
+                          </li>
+                          <li class="nav-item">
+                                <a class="nav-link" href="#">CHI SIAMO</a>
+                          </li>
+                          <li class="nav-item">
+                                <a class="nav-link disabled" href="#">CONTATTI</a>
+                          </li>
+                      </ul>
                   </div>
-              </div>
-              <div id="header_menu">
-              </div>
+              </nav>
           </div>
       </div>
+  </div>
       <div id="main_page_center_div">
           <div id="main_page_background_div">
               <div id="main_page_content_div">
+                  <div id="content_div" class="d-none d-md-none d-lg-block d-xl-block">
+                      <div class="row">
+                          <div class="col-8">
+                              <div class="project-article">
+                                  <div class="row">
+                                      <div class="proj-img-out" class="col-4">
+                                          <div class="project-image">
+                                              <img class="fit-div-image" src="imgs/placeholder_proj.jpg" class="img-fluid" alt="Logo">
+                                          </div>
+                                      </div>
+                                      <div class="project_content" class="col-8">
+                                          <div class="proj-name-div">
+                                              <h3 class="proj-name-h3">PROGETTO 1</h3>
+                                          </div>
+                                          <div class="proj-summ-div">
+                                              <p class="proj-summ-p">
+                                                  Molestiae tempora ut sed. Ea amet ut ex. Sed harum veritatis aperiam
+                                                  omnis perspiciatis at. Quia amet ad nostrum ipsa mollitia quidem eum.
+                                                  Necessitatibus eos consequatur cupiditate ab. Aliquid ut amet rerum
+                                                  occaecati.…
+                                              </p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+
+                              <hr>
+
+                              <div class="project-article">
+                                  <div class="row">
+                                      <div class="proj-img-out" class="col-4">
+                                          <div class="project-image">
+                                              <img class="fit-div-image" src="imgs/placeholder_proj.jpg" class="img-fluid" alt="Logo">
+                                          </div>
+                                      </div>
+                                      <div class="project_content" class="col-8">
+                                          <div class="proj-name-div">
+                                              <h3 class="proj-name-h3">PROGETTO 1</h3>
+                                          </div>
+                                          <div class="proj-summ-div">
+                                              <p class="proj-summ-p">
+                                                  Molestiae tempora ut sed. Ea amet ut ex. Sed harum veritatis aperiam
+                                                  omnis perspiciatis at. Quia amet ad nostrum ipsa mollitia quidem eum.
+                                                  Necessitatibus eos consequatur cupiditate ab. Aliquid ut amet rerum
+                                                  occaecati.…
+                                              </p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div id="news-container-div-big" class="col-4">
+                              <div id="news-title">
+
+                              </div>
+                              <div id="news-container-div">
+                                  <div class="news-div">
+                                      NEWS 1
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
               </div>
           </div>
       </div>
   </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </body>
 </html>
