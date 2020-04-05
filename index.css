@@ -1,5 +1,9 @@
+:root {
+  --mainColor: #000;
+}
+
 body {
-background-color: black !important;
+    background-color: black !important;
 }
 
 .navbar {
@@ -76,12 +80,41 @@ background-color: black !important;
 
 .project_content {
 
-    width: 67%;
-    max-height: 200px;
+    width: 64%;
+    max-height: 130px;
     padding: 1%;
     padding-left: 3%;
     padding-right: 3%;
-    overflow:hidden;
+    margin-right: 3%;
+}
+
+.proj-name-h3 {
+  background:
+     linear-gradient(
+       to left, var(--mainColor) 0%,
+       var(--mainColor) 100%
+     );
+    background-position: 0 100%;
+    background-repeat: repeat-y;
+    background-size: 0px 0px;
+      color: #000;
+      text-decoration: none;
+      transition: background-size .3s;
+}
+
+.project-article:hover .proj-name-h3{
+    background-size: 100% 100px;
+    color: white;
+}
+
+.proj_cont_link {
+    color: black;
+    min-height: 100%;
+}
+
+.proj_cont_link:hover {
+    color: black;
+    text-decoration: none;
 }
 
 .proj-name-div {
@@ -93,11 +126,11 @@ background-color: black !important;
 }
 
 .proj-summ-div {
+    min-height: 100%;
     text-align: justify ;
 }
 
 .proj-summ-h6 {
-    max-height: 7vh;
     overflow: hidden;
     font-family: 'Roboto', sans-serif !important;
 }
