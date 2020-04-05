@@ -119,12 +119,34 @@ background-color: black !important;
 }
 
 #news-container-div-big {
-    padding: 2%;
-    float: left
+    padding: 1%;
+}
+
+#news-title {
+    font-family: 'Inria Sans', sans-serif !important;
+}
+
+.news-container-div-big {
+    padding: 6% !important;
+    float: left;
 }
 
 .news-div {
-    background-color: yellow;
+    padding: 3%;
+    padding-bottom: 0%;
+    border-bottom: 1px solid black;
+    background-color: white;
+}
+
+.news-summ-p {
+    text-align: justify;
+    padding: 1%;
+    padding-bottom: 0%;
+    line-height: 1.3;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Inria Sans';
 }
 
 #footer-div-site {
