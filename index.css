@@ -47,7 +47,7 @@ background-color: black !important;
 
     width: 80%;
     margin: 10%;
-    margin-top: 30%;
+    margin-top: 35%;
     padding: 4% !important;
     padding-top: 2% !important;
 
@@ -78,14 +78,14 @@ background-color: black !important;
 
     width: 67%;
     max-height: 200px;
-    padding: 2%;
-    padding-left: 4%;
-    padding-right: 4%;
+    padding: 1%;
+    padding-left: 3%;
+    padding-right: 3%;
     overflow:hidden;
 }
 
 .proj-name-div {
-    text-align: right;
+    text-align: left;
 }
 
 .proj-name-h3 {
@@ -93,10 +93,12 @@ background-color: black !important;
 }
 
 .proj-summ-div {
+    max-height: 60px !important;
     text-align: justify ;
 }
 
-.proj-summ-p {
+.proj-summ-h6 {
+    overflow: hidden;
 }
 
 #news-container-div-big {
