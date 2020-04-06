@@ -6,6 +6,7 @@
 #about-work-div {
 
     margin: 8.5%;
+    margin-top: 10%;
     margin-bottom: 5%;
 }
 
@@ -28,8 +29,8 @@
 }
 
 .about-title-h3 {
-    margin-top: 7.5%;
-    margin-bottom: 5%;
+    margin-top: 5%;
+    margin-bottom: 10%;
 
     font-size: 50px !important;
     font-family: 'Inria Sans', sans-serif !important;
@@ -67,8 +68,52 @@
     font-family: 'Inria Sans', sans-serif !important;
 }
 
-#team-work-div {
-height: 400px;
+#team-container-div {
     width: 100%;
+    padding: 5%;
+
     background-color: white;
+}
+
+.col-3 {
+    margin-left: 2% !important;
+}
+
+#team-text-h3 {
+
+    padding-top: -.5%;
+    padding-bottom: 5%;
+
+    color: black;
+    text-align: center;
+
+    font-size: 50px !important;
+    font-family: 'Inria Sans', sans-serif !important;
+}
+
+.team-member-div {
+    padding: 10%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.team-member-name {
+    font-size: 30px;
+    font-family: 'Inria Sans', sans-serif !important;
+}
+
+.team-member-title {
+    margin-top: -3%;
+    margin-bottom: 10%;
+
+    color: #555;
+    font-size: 14px;
+    font-family: 'Inria Sans', sans-serif !important;
+}
+
+.team-member-contacts {
+    color: #222;
+    font-size: 18px;
+    text-decoration: underline;
+    font-family: 'Inria Sans', sans-serif !important;
 }
