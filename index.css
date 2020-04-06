@@ -3,48 +3,12 @@
 }
 
 body {
-    background-color: black !important;
-}
 
-.navbar {
-    top: 0;
-    width: 100%;
-    position:fixed;
-    padding: 5px !important;
-    padding-left: 10px !important;
-    padding-right: 15px !important;
-
-    background-color: black !important;
-}
-
-#logo-img {
-    height: 50px;
-    margin-right: 15px;
-}
-
-.navbar-brand {
-
-    padding-top: 10px;
-
-    line-height: 1.2 !important;
-    font-size: 18px !important;
-    font-family: 'Inria Sans', sans-serif !important;
-
-    color: white !important;
-}
-
-.navbar-toggler-icon {
-    background-color: white !important;
-}
-
-.nav-link {
-    margin-left: 10px;
-    padding-top: 20px;
-
-    font-size: 17px !important;
-    font-family: 'Inria Sans', sans-serif !important;
-
-    color: white !important;
+	background-image:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)),
+        url('');
+	background-repeat: no-repeat;
+	background-size: 100vw;
 }
 
 #content_div {
@@ -186,32 +150,4 @@ body {
     font-size: 16px;
     font-weight: bold;
     font-family: 'Inria Sans';
-}
-
-#footer-div-site {
-    height: 3vw;
-    bottom: 0;
-    position: relative;
-    display: block;
-    padding: 1%;
-    background-color: #121212;
-}
-
-#copyright {
-    width: 100%;
-    display: block !important;
-    float: left !important;
-}
-
-#copyright-text {
-    float: left !important;
-    color: white;
-    font-family: 'Inria Sans', sans-serif !important;
-}
-
-#copyright-sy {
-    float: left !important;
-    margin-left: 5px !important;
-    color: white;
-    font-family: 'Inria Sans', sans-serif !important;
 }

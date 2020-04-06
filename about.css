@@ -1,0 +1,17 @@
+#about-work-div {
+    width: 80vw;
+    margin-left: 10vw;
+}
+
+#about-work-container-div {
+    min-width: 100%;
+}
+
+.left-content-about-div {
+    color: white;
+    border-right: 5px solid white;
+}
+
+.right-content-about-div {
+    color: white;
+}
