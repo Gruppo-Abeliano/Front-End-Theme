@@ -37,13 +37,48 @@ body {
 }
 
 .nav-link {
-    margin-left: 10px;
+
+    margin-right: 20px !important;
+    padding: 0px !important;
     padding-top: 20px;
 
     font-size: 17px !important;
     font-family: 'Inria Sans', sans-serif !important;
 
     color: white !important;
+}
+
+.current {
+    border-bottom: 3px solid white;
+}
+
+.external {
+
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+
+    background:
+        linear-gradient(
+            to left, var(--white) 0%,
+            var(--white) 100%
+        );
+
+    background-size: 0px 0px;
+    background-position: 0 100%;
+    background-repeat: repeat-y;
+    transition: background-size .5s;
+
+    color: #FFF;
+    text-decoration: none;
+}
+
+.external:hover {
+
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+
+    background-size: 100% 100px;
+    color: black !important;
 }
 
 /* FOOTER */
