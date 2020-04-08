@@ -12,6 +12,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@600&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@700&display=swap" rel="stylesheet">
 
+        <!-- JQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
         <!-- Bootstrap CSS -->
@@ -24,6 +25,10 @@
       </head>
     <body>
     <div id="projects-page-div">
+
+        <div id="loading-screen">
+            <img id="loading-gif" class="center-img" src="imgs/loading.gif" alt="Loading">
+        </div>
 
         <div id="projects_page_center_div">
             <div id="projects_page_background_div">
@@ -110,6 +115,23 @@
                     $(this).delay(500).css("border-right", "1px solid #888");
                 });
             });
+
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+
+            setTimeout(function() {
+                $("#loading-gif").remove();
+            }, 2000);
+
+            $("#loading-screen").delay(2000).animate(
+                {width: '0%'},
+                1000,
+                function() {
+                    $('body').css('overflow', 'scroll');
+                    ("#loading-screen").remove();
+                });
 
         });
     </script>
