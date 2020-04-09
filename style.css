@@ -112,7 +112,7 @@ body {
 
 /* FOOTER */
 #footer-div-site {
-    height: 3vw;
+    height: 6vh;
     margin-top: auto;
     display: block;
     padding: 1%;
@@ -348,7 +348,7 @@ body {
 }
 
 #projects_page_center_div {
-    min-height: 90vh;
+    min-height: 94vh;
 }
 
 #projects-div {
