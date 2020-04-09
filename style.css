@@ -441,12 +441,14 @@ background-color: white;
 
 .project-text {
 
+    max-height: 27vh;
     margin-top: 10%;
 
     color: white;
     text-align: justify;
 
     font-size: 16px;
+    overflow: hidden;
     font-family: 'Inria Sans', sans-serif !important;
 }
 
