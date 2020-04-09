@@ -4,7 +4,7 @@
 
     
 
-    <div id="projects_page_center_div" style="min-height: 91.75vh;">
+    <div id="projects_page_center_div">
         <div id="projects_page_background_div">
             <div id="projects_page_content_div">
 

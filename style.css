@@ -316,7 +316,7 @@ body {
 /* PROJECTS STYLE*/
 
 #search-proj-div {
-    top: 7vh;
+    top: 8.5vh;
     height: 4vh;
     width: auto;
     position: absolute;
@@ -348,7 +348,7 @@ body {
 }
 
 #projects_page_center_div {
-    min-height: 94vh;
+    min-height: 100vh;
 }
 
 #projects-div {
