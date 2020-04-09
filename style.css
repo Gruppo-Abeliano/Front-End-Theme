@@ -49,13 +49,13 @@ body {
 }
 
 #logo-img {
-    height: 50px;
+    height: 6vh;
     margin-right: 15px;
 }
 
 .navbar-brand {
 
-    padding-top: 10px;
+    padding-top: 1vh;
 
     line-height: 1.2 !important;
     font-size: 18px !important;
@@ -316,9 +316,9 @@ body {
 /* PROJECTS STYLE*/
 
 #search-proj-div {
-    top: 60px;
+    top: 7vh;
     height: 4vh;
-    width: 100vw;
+    width: auto;
     position: absolute;
     margin: 0 !important;
 }
@@ -343,6 +343,10 @@ body {
     vertical-align: middle;
     background-color: black;
     border: 0px solid transparent;
+}
+
+#projects_page_center_div {
+    min-height: 90vh;
 }
 
 #projects-div {
@@ -395,7 +399,7 @@ body {
     max-width: 23vw;
 
     background-size: 100% 100px;
-    border-right: 0px solid #transparent;
+    border-right: 0px solid transparent;
 }
 
 .project-link {
