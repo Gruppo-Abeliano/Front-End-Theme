@@ -664,7 +664,8 @@ background-color: black !important;
 #project-page-proj-code {
 
     padding: 0.5%;
-    padding-bottom: 0.25%;
+    padding-top: 0.2%;
+    padding-bottom: 0.2%;
     display:inline-block;
 
     background:
@@ -711,12 +712,12 @@ background-color: black !important;
 
 #project-page-proj-text {
 
-    max-width: 35vw;
+    max-width: 30vw;
     padding-top: 2.5%;
 
     color: white;
     text-align: justify;
 
-    font-size: 20px;
+    font-size: 19px;
     font-family: 'Inria Sans', sans-serif !important;
 }

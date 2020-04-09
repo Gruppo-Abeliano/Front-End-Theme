@@ -64,7 +64,7 @@
             <div id="single-proj-page-background-div">
                 <div id="single-proj-page-content-div">
 
-                    <div id="index-content-div" class="d-none d-md-none d-lg-block d-xl-block">
+                    <div id="single-proj-content-div" class="d-none d-md-none d-lg-block d-xl-block">
 
                         <div id="project-page-div">
                             <h3 id="project-page-proj-code">00000000</h3><br>
@@ -109,14 +109,10 @@
     <script>
         $(document).ready(function(){
 
-            var number = Math.random() * 1500;
+            var number = Math.random() * 100;
 
             // PROJECT PAGE START
             $("#project-page-proj-text").hide();
-
-            setTimeout(function() {
-                $("#loading-gif").remove();
-            }, number);
 
             setTimeout(function() {
                 $("#project-page-proj-code").addClass("proj-page-effect");
@@ -131,6 +127,10 @@
             }, number + 1750);
 
             // PROJECT PAGE END
+
+            setTimeout(function() {
+                $("#loading-gif").remove();
+            }, number);
 
             $("#loading-screen").delay(number).animate(
                 {width: '0%'},
