@@ -83,7 +83,24 @@
     <script>
         $(document).ready(function(){
 
-            var number = Math.random() * 2500;
+            var number = Math.random() * 1500;
+
+            // PROJECT PAGE START
+            $("#project-page-proj-text").hide();
+
+            setTimeout(function() {
+                $("#project-page-proj-code").addClass("proj-page-effect");
+            }, number + 1100);
+
+            setTimeout(function() {
+                $("#project-page-proj-name").addClass("proj-page-effect");
+            }, number + 1500);
+
+            setTimeout(function() {
+                $("#project-page-proj-text").slideDown(750);
+            }, number + 1750);
+
+            // PROJECT PAGE END
 
             setTimeout(function() {
                 $("#loading-gif").remove();
