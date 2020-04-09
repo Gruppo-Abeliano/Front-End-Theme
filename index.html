@@ -162,15 +162,17 @@
     <script>
         $(document).ready(function(){
 
+            var number = Math.random() * 2500;
+
             setTimeout(function() {
                 $("#loading-gif").remove();
-            }, 2000);
+            }, number);
 
-            $("#loading-screen").delay(2000).animate(
+            $("#loading-screen").delay(number).animate(
                 {width: '0%'},
                 1000,
                 function() {
-                    $('body').css('overflow', 'scroll');
+                    $('body').css('overflowY', 'scroll');
                     ("#loading-screen").remove();
                 });
 
