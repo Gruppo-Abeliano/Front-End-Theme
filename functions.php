@@ -15,22 +15,15 @@
     }
     add_filter('nav_menu_css_class', 'add_menu_list_item_class', 1, 3);
 
-    //<a> class inside menu
-    function add_menu_link_class( $atts, $item, $args ) {
-        if (property_exists($args, 'link_class')) {
-          $atts['class'] = $args->link_class;
-        }
-        return $atts;
-    }
-    add_filter( 'nav_menu_link_attributes', 'add_menu_link_class', 1, 3 );
-
-    //active effect inside menu
-    function special_nav_class ($classes, $item) {
-        if (in_array('current-menu-item', $classes) ){
-            $classes[] = 'active ';
+    //current and external effect inside menu
+    function add_class_to_href( $classes, $item ) {
+        if ( in_array('current_page_item', $item->classes) ) {
+            $classes['class'] = 'current nav-link';
+        }else{
+            $classes['class'] = 'external nav-link';
         }
         return $classes;
     }
-    add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
+    add_filter( 'nav_menu_link_attributes', 'add_class_to_href', 10, 2 );
     
 ?>
