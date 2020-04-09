@@ -12,30 +12,35 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@600&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@700&display=swap" rel="stylesheet">
 
+        <!-- JQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
               integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <!-- Custom CSS -->
-        <link rel="stylesheet" type="text/css" href="projects.css">
-        <link rel="stylesheet" type="text/css" href="commons.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
 
         <title>Gruppo Abeliano</title>
       </head>
     <body>
     <div id="projects-page-div">
 
+        <div id="loading-screen">
+            <img id="loading-gif" class="center-img" src="imgs/loading.gif" alt="Loading">
+        </div>
+
         <div id="projects_page_center_div">
             <div id="projects_page_background_div">
                 <div id="projects_page_content_div">
+
                     <div id="projects_content_div" class="d-none d-md-none d-lg-block d-xl-block">
 
                         <div class="row" id="search-proj-div">
 
-                            <div class="col-1"></div>
+                            <div class="col-1 proj-col-1"></div>
 
-                            <div class="col-10" id="search-bar-div">
+                            <div class="col-10 proj-col-10" id="search-bar-div">
                                 <form action="index.html">
                                     <input type="text" id="search-bar" placeholder="Search" name="search">
                                     <button type="submit" id="search-button">
@@ -44,87 +49,24 @@
                                 </form>
                             </div>
 
-                            <div class="col-1"></div>
+                            <div class="col-1 proj-col-1"></div>
 
                         </div>
 
                         <div class="row" id="projects-div">
 
-                            <div class="col-1"></div>
+                            <div class="col-1 proj-col-1"></div>
 
-                            <div class="col-10">
+                            <div class="col-10 proj-col-10">
                                 <div class="row">
 
-                                    <div class="col-3">
+                                    <div class="col-3 proj-col-3">
                                         <a class="project-link" href="#">
                                             <div>
-                                                <h5 class="code-number">0000 0000</h5>
+                                                <h5 class="proj-code-number">0000 0000</h5>
                                                 <h4 class="project-name">PROJECT NAME</h4>
 
-                                                <div class="proj-img-out" class="col-4">
-                                                    <div class="project-image">
-                                                        <img class="fit-div-image" src="imgs/ex.jpeg" class="img-fluid">
-                                                    </div>
-                                                </div>
-
-                                                <p class="project-text">
-                                                    Molestiae tempora ut sed. Ea amet ut ex. Sed harum veritatis aperiam
-                                                    omnis perspiciatis at. Quia amet ad nostrum ipsa mollitia quidem eum.
-                                                    Necessitatibus eos consequatur cupiditate ab. Aliquid ut amet rerum
-                                                    occaecati
-                                                </p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-3">
-                                        <a class="project-link" href="#">
-                                            <div>
-                                                <h5 class="code-number">0000 0001</h5>
-                                                <h4 class="project-name">PROJECT NAME</h4>
-
-                                                <div class="proj-img-out" class="col-4">
-                                                    <div class="project-image">
-                                                        <img class="fit-div-image" src="imgs/ex.jpeg" class="img-fluid">
-                                                    </div>
-                                                </div>
-
-                                                <p class="project-text">
-                                                    Molestiae tempora ut sed. Ea amet ut ex. Sed harum veritatis aperiam
-                                                    omnis perspiciatis at. Quia amet ad nostrum ipsa mollitia quidem eum.
-                                                    Necessitatibus eos consequatur cupiditate ab. Aliquid ut amet rerum
-                                                    occaecati
-                                                </p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-3">
-                                        <a class="project-link" href="#">
-                                            <div>
-                                                <h5 class="code-number">0000 0010</h5>
-                                                <h4 class="project-name">PROJECT NAME</h4>
-
-                                                <div class="proj-img-out" class="col-4">
-                                                    <div class="project-image">
-                                                        <img class="fit-div-image" src="imgs/ex.jpeg" class="img-fluid">
-                                                    </div>
-                                                </div>
-
-                                                <p class="project-text">
-                                                    Molestiae tempora ut sed. Ea amet ut ex. Sed harum veritatis aperiam
-                                                    omnis perspiciatis at. Quia amet ad nostrum ipsa mollitia quidem eum.
-                                                    Necessitatibus eos consequatur cupiditate ab. Aliquid ut amet rerum
-                                                    occaecati
-                                                </p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-3">
-                                        <a class="project-link" href="#">
-                                            <div>
-                                                <h5 class="code-number">0000 0011</h5>
-                                                <h4 class="project-name">PROJECT NAME</h4>
-
-                                                <div class="proj-img-out" class="col-4">
+                                                <div class="proj-img-out" class="col-4 proj-col-4">
                                                     <div class="project-image">
                                                         <img class="fit-div-image" src="imgs/ex.jpeg" class="img-fluid">
                                                     </div>
@@ -143,7 +85,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-1"></div>
+                            <div class="col-1 proj-col-1"></div>
 
                         </div>
 
@@ -173,6 +115,23 @@
                     $(this).delay(500).css("border-right", "1px solid #888");
                 });
             });
+
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+
+            setTimeout(function() {
+                $("#loading-gif").remove();
+            }, 2000);
+
+            $("#loading-screen").delay(2000).animate(
+                {width: '0%'},
+                1000,
+                function() {
+                    $('body').css('overflow', 'scroll');
+                    ("#loading-screen").remove();
+                });
 
         });
     </script>
