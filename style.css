@@ -395,12 +395,6 @@ body {
 
 .proj-col-3:hover{
 
-    top: -4vh;
-    min-height: 73vh;
-    max-height: 73vh;
-    min-width: 23vw;
-    max-width: 23vw;
-
     background-size: 100% 100px;
     border-right: 0px solid transparent;
 }
@@ -469,24 +463,12 @@ background-color: white;
     font-family: 'Inria Sans', sans-serif !important;
 }
 
-.proj-col-3:hover .proj-img-out {
-
-    min-height: 22vh !important;
-    max-height: 22vh !important;
-    min-width: 15vw !important;
-    max-width: 21vw !important;
-
-
-}
-
 .proj-col-3:hover .project-text {
 
     margin-top: 10%;
 
     color: black;
     text-align: justify;
-
-    font-size: 16px;
     font-family: 'Inria Sans', sans-serif !important;
 }
 
@@ -646,5 +628,78 @@ background-color: white;
     color: #222;
     font-size: 18px;
     text-decoration: underline;
+    font-family: 'Inria Sans', sans-serif !important;
+}
+
+/* PROJECT PAGE */
+
+#project-page-div {
+
+    min-height: 94vh;
+
+    padding: 7.5%;
+    padding-top: 17.5vh;
+
+    color: white;
+}
+
+#project-page-proj-code {
+
+    padding: 0.5%;
+    padding-top: 0.2%;
+    padding-bottom: 0.2%;
+    display:inline-block;
+
+    background:
+        linear-gradient(
+            to left, var(--white) 0%,
+            var(--white) 100%
+        );
+
+    background-size: 0px 0px;
+    background-position: 0 100%;
+    background-repeat: repeat-y;
+    transition: background-size .75s;
+
+    color: black;
+    font-family: 'Inria Sans', sans-serif !important;
+}
+
+#project-page-proj-name {
+
+    padding: 0.5%;
+    margin-top: -0.25%;
+    display:inline-block;
+
+    background:
+        linear-gradient(
+            to left, var(--white) 0%,
+            var(--white) 100%
+        );
+
+    background-size: 0px 0px;
+    background-position: 0 100%;
+    background-repeat: repeat-y;
+    transition: background-size .75s;
+
+    color: black;
+    font-family: 'Inria Sans', sans-serif !important;
+}
+
+.proj-page-effect {
+
+    background-size: 100% 10px !important;
+    color: black !important;
+}
+
+#project-page-proj-text {
+
+    max-width: 30vw;
+    padding-top: 2.5%;
+
+    color: white;
+    text-align: justify;
+
+    font-size: 19px;
     font-family: 'Inria Sans', sans-serif !important;
 }

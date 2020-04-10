@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <link rel="icon" href="imgs/logo.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@700&display=swap" rel="stylesheet">
+
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <title>Gruppo Abeliano</title>
+    </head>
+    <body>
+    <div id="main-page-div">
+
+        <div id="loading-screen">
+            <img id="loading-gif" class="center-img" src="imgs/loading.gif" alt="Loading">
+        </div>
+
+        <div id="main-page-header-div">
+          <div id="header-div-site">
+              <nav class="navbar navbar-expand-lg">
+                  <img src="imgs/logo.jpeg" class="img-fluid" id="logo-img" alt="Logo">
+                  <div id="brand_div" class="d-none d-md-none d-lg-block d-xl-block">
+                      <a class="navbar-brand" href="#">GRUPPO<br>ABELIANO</a>
+                  </div>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav ml-auto">
+                          <li class="nav-item">
+                                <a class="nav-link current" href="#">HOME</a>
+                          </li>
+                          <li class="nav-item">
+                                <a class="nav-link external" href="projects.html">PROGETTI</a>
+                          </li>
+                          <li class="nav-item">
+                                <a class="nav-link external" href="news.html">NEWS</a>
+                          </li>
+                          <li class="nav-item">
+                                <a class="nav-link external" href="about.html">CHI SIAMO</a>
+                          </li>
+                      </ul>
+                  </div>
+              </nav>
+          </div>
+      </div>
+
+        <!-- CONTENT SITE GOES HERE -->
+
+        <div id="main-page-footer-div">
+          <div id="footer-div-site">
+              <div id="copyright">
+                  <div id="copyright-text" class="d-none d-md-none d-lg-block d-xl-block">
+                      <h6>GRUPPO ABELIANO</h6>
+                  </div>
+                  <div id="copyright-sy">
+                      <h6>&#169;  2020</h6>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+
+            var number = Math.random() * 1500;
+
+            // PROJECT PAGE START
+            $("#project-page-proj-text").hide();
+
+            setTimeout(function() {
+                $("#project-page-proj-code").addClass("proj-page-effect");
+            }, number + 1100);
+
+            setTimeout(function() {
+                $("#project-page-proj-name").addClass("proj-page-effect");
+            }, number + 1500);
+
+            setTimeout(function() {
+                $("#project-page-proj-text").slideDown(750);
+            }, number + 1750);
+
+            // PROJECT PAGE END
+
+            setTimeout(function() {
+                $("#loading-gif").remove();
+            }, number);
+
+            $("#loading-screen").delay(number).animate(
+                {width: '0%'},
+                1000,
+                function() {
+                    $('body').css('overflowY', 'scroll');
+                    ("#loading-screen").remove();
+                });
+
+        });
+    </script>
+    </body>
+</html>
