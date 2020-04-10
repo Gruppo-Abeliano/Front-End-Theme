@@ -1,10 +1,12 @@
 :root {
-  --primary: rgb(248, 0, 165);
-  --secondary: rgb(51, 255, 0);
-  --footbar: rgb(255, 255, 0);
-  --project_border: rgb(0, 26, 255);
-  --team_member_title: rgb(255, 255, 0);
-  --team_member_contact: rgb(255, 255, 0);
+  --primary: rgb(0, 0, 0);
+  --secondary: #F18F01;
+  --footbar: rgba(49, 49, 49, 0.623);
+  --project_border: #F18F01;
+  --placeholder: #F18F01;
+  --team_member_title: #F18F01;
+  --team_member_contact: #F18F01;
+
 }
 
 /* LOADING SCREEN */
@@ -332,16 +334,16 @@ body {
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-    color: var(--secondary);
+    color: var(--placeholder);
 }
 ::-moz-placeholder { /* Firefox 19+ */
-    color: var(--secondary);
+    color: var(--placeholder);
 }
 :-ms-input-placeholder { /* IE 10+ */
-    color: var(--secondary);
+    color: var(--placeholder);
 }
 :-moz-placeholder { /* Firefox 18- */
-    color: var(--secondary);
+    color: var(--placeholder);
 }
 
 #search-bar {
