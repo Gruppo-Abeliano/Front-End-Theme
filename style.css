@@ -394,12 +394,6 @@ body {
 
 .proj-col-3:hover {
 
-    top: -4vh;
-    min-height: 73vh;
-    max-height: 73vh;
-    min-width: 23vw;
-    max-width: 23vw;
-
     background-size: 100% 100px;
     border-right: 0px solid transparent;
 }
@@ -468,25 +462,12 @@ background-color: white;
     font-family: 'Inria Sans', sans-serif !important;
 }
 
-.proj-col-3:hover .proj-img-out {
-
-    min-height: 22vh !important;
-    max-height: 22vh !important;
-    min-width: 15vw !important;
-    max-width: 21vw !important;
-
-background-color: black !important;
-
-}
-
 .proj-col-3:hover .project-text {
 
     margin-top: 10%;
 
     color: black;
     text-align: justify;
-
-    font-size: 16px;
     font-family: 'Inria Sans', sans-serif !important;
 }
 
