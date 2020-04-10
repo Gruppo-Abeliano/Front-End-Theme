@@ -755,7 +755,7 @@ background-color: var(--secondary);
     background-repeat: repeat-y;
     transition: background-size .75s;
 
-    color: black;
+    color: --primary;
     font-family: 'Inria Sans', sans-serif !important;
 }
 
@@ -776,7 +776,7 @@ background-color: var(--secondary);
     background-repeat: repeat-y;
     transition: background-size .75s;
 
-    color: black;
+    color: --primary;
     font-family: 'Inria Sans', sans-serif !important;
 }
 
