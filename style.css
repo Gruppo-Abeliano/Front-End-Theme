@@ -322,7 +322,7 @@ body {
 /* PROJECTS STYLE*/
 
 #search-proj-div {
-    top: 8.5vh;
+    top: 10.5vh;
     height: 4vh;
     width: auto;
     position: absolute;
@@ -348,7 +348,7 @@ body {
 
 #search-bar {
 
-    margin-left: 8vw;
+    margin-left: 9.5vw;
 
     font-size: 25px;
     font-family: 'Inria Sans', sans-serif !important;
@@ -391,7 +391,7 @@ body {
     max-height: 65vh;
 
     float: right;
-    padding: 2.5%;
+    padding: 2%;
     padding-bottom: 1%;
 
     background:
@@ -455,7 +455,7 @@ body {
 
     margin-bottom: 1vh;
 
-background-color: var(--secondary);
+    background-color: var(--secondary);
 
 }
 
@@ -575,6 +575,7 @@ background-color: var(--secondary);
 .about-col-3 {
     margin-bottom: 2% !important;
     border: 0px solid transparent !important;
+    background-color: var(--secondary);
 }
 
 #team-text-h3 {
@@ -666,6 +667,79 @@ background-color: var(--secondary);
     padding-top: 17.5vh;
 
     color: var(--secondary);
+}
+
+#project-page-proj-code {
+
+    padding: 0.5%;
+    padding-top: 0.2%;
+    padding-bottom: 0.2%;
+    display:inline-block;
+
+    background:
+        linear-gradient(
+            to left, var(--secondary) 0%,
+            var(--secondary) 100%
+        );
+
+    background-size: 0px 0px;
+    background-position: 0 100%;
+    background-repeat: repeat-y;
+    transition: background-size .75s;
+
+    color: var(--primary);
+    font-family: 'Inria Sans', sans-serif !important;
+}
+
+#project-page-proj-name {
+
+    padding: 0.5%;
+    margin-top: -0.25%;
+    display:inline-block;
+
+    background:
+        linear-gradient(
+            to left, var(--secondary) 0%,
+            var(--secondary) 100%
+        );
+
+    background-size: 0px 0px;
+    background-position: 0 100%;
+    background-repeat: repeat-y;
+    transition: background-size .75s;
+
+    color: var(--primary);
+    font-family: 'Inria Sans', sans-serif !important;
+}
+
+.proj-page-effect {
+
+    background-size: 100% 10px !important;
+    color: var(--primary) !important;
+}
+
+#project-page-proj-text {
+
+    max-width: 30vw;
+    padding-top: 2.5%;
+
+    color: var(--secondary);
+    text-align: justify;
+
+    font-size: 19px;
+    font-family: 'Inria Sans', sans-serif !important;
+}
+
+/* PROJECT PAGE */
+
+#project-page-div {
+
+    min-height: 94vh;
+
+    padding: 7.5%;
+    padding-top: 17.5vh;
+
+    color: white;
 }
 
 #project-page-proj-code {
