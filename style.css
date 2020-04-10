@@ -1,10 +1,11 @@
 :root {
-  --primary: rgb(248, 0, 165);
-  --secondary: rgb(51, 255, 0);
-  --footbar: rgb(255, 255, 0);
-  --project_border: rgb(0, 26, 255);
-  --team_member_title: rgb(255, 255, 0);
-  --team_member_contact: rgb(255, 255, 0);
+    --primary: rgb(0, 0, 0);
+    --secondary: #F28F00;
+    --footbar: rgba(49, 49, 49, 0.623);
+    --project_border: #F18F01;
+    --placeholder: #F18F01;
+    --team_member_title: #F18F01;
+    --team_member_contact: #F18F01;
 }
 
 /* LOADING SCREEN */
@@ -730,7 +731,11 @@ background-color: var(--secondary);
 
 #project-page-div {
 
+    width: 60vw;
+    height: auto;
     min-height: 94vh;
+
+    float: left;
 
     padding: 7.5%;
     padding-top: 17.5vh;
@@ -789,12 +794,107 @@ background-color: var(--secondary);
 
 #project-page-proj-text {
 
-    max-width: 30vw;
+    width: 50vw;
+    max-width: 50vw;
+    max-height: 50vh;
     padding-top: 2.5%;
+    padding-bottom: 7.5%;
 
-    color: var(--secondary) !important;
     text-align: justify;
+    color: var(--secondary) !important;
 
     font-size: 19px;
+    font-family: 'Inria Sans', sans-serif !important;
+}
+
+#project-code-div {
+
+    width: 50vw;
+    padding-top: 17.5vh;
+
+    background-color: var(--secondary);
+}
+
+#code-tag {
+
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+    text-align: justify;
+    color: var(--secondary) !important;
+
+    font-size: 35px;
+    font-family: 'Inria Sans', sans-serif !important;
+}
+
+.project-page-proj-expl {
+
+    width: 50vw;
+    max-width: 50vw;
+
+    text-align: justify;
+    color: var(--secondary) !important;
+
+    font-size: 16px;
+    font-family: 'Inria Sans', sans-serif !important;
+}
+
+.project-page-proj-code {
+
+    width: 50vw;
+    max-width: 50vw;
+
+    padding: 3%;
+    padding-left: 5%;
+
+    margin-top: 3%;
+    margin-bottom: 3%;
+
+    text-align: justify;
+
+    font-size: 15px;
+    color: var(--primary) !important;
+    background-color: var(--secondary) !important;
+    font-family: 'Inria Sans', sans-serif !important;
+}
+
+#project-single-top-div {
+    width: 40vw;
+    margin-left: auto;
+
+    padding: 4.5%;
+    padding-top: 17.5vh;
+
+    background-color: var(--primary) !important;
+}
+
+.top-h3-proj {
+
+    margin-top: 5%;
+
+    color: var(--secondary) !important;
+    font-family: 'Inria Sans', sans-serif !important;
+}
+
+.top-row-proj {
+    margin: 0.5%;
+    max-height: 15vh;
+    padding: 4%;
+    overflow: hidden;
+    background-color: var(--secondary);
+}
+
+.top-row-proj-name-h4 {
+    font-size: 18px;
+    color: var(--primary) !important;
+    font-family: 'Inria Sans', sans-serif !important;
+}
+
+.top-row-proj-summ-h6 {
+    max-height: 7.25vh;
+    overflow: hidden;
+    font-size: 15px !important;
+    text-align: justify;
+    color: var(--primary) !important;
     font-family: 'Inria Sans', sans-serif !important;
 }
