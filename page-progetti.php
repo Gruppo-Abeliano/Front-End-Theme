@@ -34,27 +34,33 @@
                         <div class="col-10 proj-col-10">
                             <div class="row">
 
-                                <div class="col-3 proj-col-3">
-                                    <a class="project-link" href="#">
-                                        <div>
-                                            <h5 class="proj-code-number">0000 0000</h5>
-                                            <h4 class="project-name">PROJECT NAME</h4>
+                                <?php
+                                    global $post;
+                                    $args = array( 'post_type' => 'Project', 'posts_per_page' => 1000, 'order'=> 'DESC', 'orderby' => 'date' );
+                                    $postslist = get_posts( $args );
+                                    foreach ( $postslist as $post ) :
+                                    setup_postdata( $post ); ?> 
 
-                                            <div class="proj-img-out" class="col-4 proj-col-4">
-                                                <div class="project-image">
-                                                    <img class="fit-div-image" src="<?php echo get_template_directory_uri(); ?>/imgs/ex.jpeg" class="img-fluid">
+                                    <div class="col-3 proj-col-3">
+                                        <a class="project-link" href="<?php the_permalink(); ?>">
+                                            <div>
+                                                <h5 class="proj-code-number">0000 0000</h5>
+                                                <h4 class="project-name"><?php the_title(); ?></h4>
+
+                                                <div class="proj-img-out" class="col-4 proj-col-4">
+                                                    <div class="project-image">
+                                                        <img class="fit-div-image img-fluid" src="<?php the_post_thumbnail_url(); ?>" >
+                                                    </div>
                                                 </div>
-                                            </div>
 
-                                            <p class="project-text">
-                                                Molestiae tempora ut sed. Ea amet ut ex. Sed harum veritatis aperiam
-                                                omnis perspiciatis at. Quia amet ad nostrum ipsa mollitia quidem eum.
-                                                Necessitatibus eos consequatur cupiditate ab. Aliquid ut amet rerum
-                                                occaecati
-                                            </p>
-                                        </div>
-                                    </a>
-                                </div>
+                                                <p class="project-text"><//?php the_content(); ?></p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <?php
+                                    endforeach; 
+                                    wp_reset_postdata();
+                                ?>
 
                             </div>
                         </div>

@@ -348,7 +348,7 @@ body {
 }
 
 #projects_page_center_div {
-    min-height: 100vh;
+    min-height: 94vh;
 }
 
 #projects-div {
@@ -475,7 +475,6 @@ background-color: white;
     min-width: 15vw !important;
     max-width: 21vw !important;
 
-background-color: black !important;
 
 }
 
