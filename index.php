@@ -11,11 +11,11 @@ get_header();
 			if(is_front_page()){
 				get_template_part('home');
             }
-			else if(is_single()){
+			else if(is_singular('project')){
 				// Load posts loop.
 				while ( have_posts() ) {
 					the_post();
-					//get_template_part('content/content', "single");
+					get_template_part('progetto');
 				}
 			}
 			
