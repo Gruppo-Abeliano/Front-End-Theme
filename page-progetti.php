@@ -31,7 +31,7 @@
 
                         <div class="col-1 proj-col-1"></div>
                         <!--  -->
-                        <div id="infinite-scroll" class="col-10 proj-col-10" style="overflow:hidden">
+                        <div id="infinite-scroll" class="col-10 proj-col-10">
                             <div id="infinite-scroll-container" class="row" >
 
                                 <?php
@@ -45,13 +45,14 @@
                                         <a class="project-link" href="<?php the_permalink(); ?>">
                                             <div>
                                                 <h5 class="proj-code-number">0000 0000</h5>
-                                                <h4 class="project-name"><?php the_title(); ?></h4>
+                                                
 
                                                 <div class="proj-img-out" class="col-4 proj-col-4">
                                                     <div class="project-image">
                                                         <img class="fit-div-image img-fluid" src="<?php the_post_thumbnail_url(); ?>" >
                                                     </div>
                                                 </div>
+                                                <h4 class="project-name"><?php the_title(); ?></h4>
 
                                                 <p class="project-text"><//?php the_content(); ?></p>
                                             </div>
@@ -74,24 +75,8 @@
         </div>
     </div>
 
-    
     <script>
-        $(document).ready(function(){
-            var totalWidth = 0;
-            $('#infinite-scroll-container').children().each(function(){
-                totalWidth += $(this).outerWidth();
-            });
-            $('#infinite-scroll-container').css('width', totalWidth);
-        });
-
-        $(function() {
-            $('#infinite-scroll').removeClass('hover'); 
-            $("#infinite-scroll").mousewheel(function(event, delta) {
-
-            this.scrollLeft -= (delta * 30);
-            event.preventDefault();
-            });
-            $('#infinite-scroll').addClass('hover');
-        });
+        
     </script>
+
 <?php get_footer() ?>

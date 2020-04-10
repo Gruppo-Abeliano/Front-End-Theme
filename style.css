@@ -1,6 +1,10 @@
 :root {
-  --black: #000;
-  --white: #FFF;
+  --primary: rgb(248, 0, 165);
+  --secondary: rgb(51, 255, 0);
+  --footbar: rgb(255, 255, 0);
+  --project_border: rgb(0, 26, 255);
+  --team_member_title: rgb(255, 255, 0);
+  --team_member_contact: rgb(255, 255, 0);
 }
 
 /* LOADING SCREEN */
@@ -14,7 +18,7 @@
 
     width: 100%;
     height: 100%;
-    background-color: #000;
+    background-color: var(--primary);
 }
 
 .center-img {
@@ -32,7 +36,7 @@
 body {
 
     overflow: hidden;
-    background-color: black !important;
+    background-color: var(--primary) !important;
 }
 
 .navbar {
@@ -45,7 +49,7 @@ body {
     padding-left: 10px !important;
     padding-right: 15px !important;
 
-    background-color: black !important;
+    background-color: var(--primary) !important;
 }
 
 #logo-img {
@@ -61,11 +65,11 @@ body {
     font-size: 18px !important;
     font-family: 'Inria Sans', sans-serif !important;
 
-    color: white !important;
+    color: var(--secondary) !important;
 }
 
 .navbar-toggler-icon {
-    background-color: white !important;
+    background-color: var(--secondary) !important;
 }
 
 .nav-link {
@@ -77,11 +81,11 @@ body {
     font-size: 17px !important;
     font-family: 'Inria Sans', sans-serif !important;
 
-    color: white !important;
+    color: var(--secondary) !important;
 }
 
 .current {
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid var(--secondary);
 }
 
 .external {
@@ -91,8 +95,8 @@ body {
 
     background:
         linear-gradient(
-            to left, var(--white) 0%,
-            var(--white) 100%
+            to left, var(--secondary) 0%,
+            var(--secondary) 100%
         );
 
     background-size: 0px 0px;
@@ -100,14 +104,14 @@ body {
     background-repeat: repeat-y;
     transition: background-size .5s;
 
-    color: #FFF;
+    color: var(--secondary);
     text-decoration: none;
 }
 
 .external:hover {
 
     background-size: 100% 100px;
-    color: black !important;
+    color: var(--primary) !important;
 }
 
 /* FOOTER */
@@ -116,7 +120,7 @@ body {
     margin-top: auto;
     display: block;
     padding: 1%;
-    background-color: #121212;
+    background-color: var(--footbar);
 }
 
 #copyright {
@@ -127,14 +131,14 @@ body {
 
 #copyright-text {
     float: left !important;
-    color: white;
+    color: var(--secondary);
     font-family: 'Inria Sans', sans-serif !important;
 }
 
 #copyright-sy {
     float: left !important;
     margin-left: 5px !important;
-    color: white;
+    color: var(--secondary);
     font-family: 'Inria Sans', sans-serif !important;
 }
 
@@ -149,7 +153,7 @@ body {
     padding: 4% !important;
     padding-top: 2% !important;
 
-    background-color: white !important;
+    background-color: var(--secondary) !important;
 }
 
 .index-project-article {
@@ -196,8 +200,8 @@ body {
 
     background:
         linear-gradient(
-            to left, var(--black) 0%,
-            var(--black) 100%
+            to left, var(--primary) 0%,
+            var(--primary) 100%
         );
 
     background-size: 0px 0px;
@@ -205,7 +209,7 @@ body {
     background-repeat: repeat-y;
     transition: background-size .5s;
 
-    color: #000;
+    color: var(--primary);
     text-decoration: none;
 }
 
@@ -213,18 +217,18 @@ body {
 
     background-size: 100% 100px;
 
-    color: white;
+    color: var(--secondary);
 }
 
 .index-proj_cont_link {
 
     min-height: 100%;
 
-    color: black;
+    color: var(--primary);
 }
 
 .index-proj_cont_link:hover {
-    color: black;
+    color: var(--primary);
     text-decoration: none;
 }
 
@@ -270,8 +274,8 @@ body {
     padding: 3%;
     padding-bottom: 0%;
 
-    background-color: white;
-    border-bottom: 1px solid black;
+    background-color: var(--secondary);
+    border-bottom: 1px solid var(--primary);
 }
 
 .index-news-link {
@@ -283,7 +287,7 @@ body {
     padding: 1%;
     padding-bottom: 0%;
 
-    color: black;
+    color: var(--primary);
     line-height: 1.3;
     text-align: justify;
 
@@ -293,8 +297,8 @@ body {
 
     background:
         linear-gradient(
-            to left, var(--black) 0%,
-            var(--black) 100%
+            to left, var(--primary) 0%,
+            var(--primary) 100%
         );
 
     background-size: 0px 0px;
@@ -302,7 +306,7 @@ body {
     background-repeat: repeat-y;
     transition: background-size .5s;
 
-    color: #000;
+    color: var(--primary);
     text-decoration: none;
 }
 
@@ -310,7 +314,7 @@ body {
 
     background-size: 100% 100px;
 
-    color: white;
+    color: var(--secondary);
 }
 
 /* PROJECTS STYLE*/
@@ -324,6 +328,20 @@ body {
 }
 
 #search-bar-div {
+    color: var(--secondary);
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: var(--secondary);
+}
+::-moz-placeholder { /* Firefox 19+ */
+    color: var(--secondary);
+}
+:-ms-input-placeholder { /* IE 10+ */
+    color: var(--secondary);
+}
+:-moz-placeholder { /* Firefox 18- */
+    color: var(--secondary);
 }
 
 #search-bar {
@@ -333,17 +351,17 @@ body {
     font-size: 25px;
     font-family: 'Inria Sans', sans-serif !important;
 
-    color: white;
-    background-color: black;
+    color: var(--secondary);
+    background-color: var(--primary);
     border: 0px solid transparent;
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid var(--secondary);
 }
 
 #search-button {
-    color: white;
+    color: var(--secondary);
     text-align: center;
     vertical-align: middle;
-    background-color: black;
+    background-color: var(--primary);
     border: 0px solid transparent;
 }
 
@@ -372,13 +390,12 @@ body {
 
     float: right;
     padding: 2.5%;
-    padding-top: 4%;
     padding-bottom: 1%;
 
     background:
         linear-gradient(
-            to left, var(--white) 0%,
-            var(--white) 100%
+            to left, var(--secondary) 0%,
+            var(--secondary) 100%
         );
 
     background-size: 0px 0px;
@@ -389,8 +406,12 @@ body {
     transition-timing-function: linear;
     
 
-    background-color: black;
-    border-right: 1px solid #888;
+    background-color: var(--primary);
+    border-right: 1px solid var(--project_border);
+}
+
+.proj-col-10{
+    overflow:hidden;
 }
 
 .proj-col-3:hover{
@@ -409,7 +430,7 @@ body {
 
 .proj-code-number {
 
-    color: white;
+    color: var(--secondary);
     text-align: right;
     font-family: 'Inria Sans', sans-serif !important;
 }
@@ -418,7 +439,7 @@ body {
 
     margin-bottom: 10%;
 
-    color: white;
+    color: var(--secondary);
     text-align: right;
     font-family: 'Inria Sans', sans-serif !important;
 }
@@ -430,7 +451,9 @@ body {
     min-width: 15vw !important;
     max-width: 21vw !important;
 
-background-color: white;
+    margin-bottom: 1vh;
+
+background-color: var(--secondary);
 
 }
 
@@ -439,7 +462,7 @@ background-color: white;
     max-height: 27vh;
     margin-top: 10%;
 
-    color: white;
+    color: var(--secondary);
     text-align: justify;
 
     font-size: 16px;
@@ -449,7 +472,7 @@ background-color: white;
 
 .proj-col-3:hover .proj-code-number {
 
-    color: black;
+    color: var(--primary);
     text-align: right;
     font-family: 'Inria Sans', sans-serif !important;
 }
@@ -458,7 +481,7 @@ background-color: white;
 
     margin-bottom: 10%;
 
-    color: black;
+    color: var(--primary);
     text-align: right;
     font-family: 'Inria Sans', sans-serif !important;
 }
@@ -467,7 +490,7 @@ background-color: white;
 
     margin-top: 10%;
 
-    color: black;
+    color: var(--primary);
     text-align: justify;
     font-family: 'Inria Sans', sans-serif !important;
 }
@@ -493,7 +516,7 @@ background-color: white;
     padding-left: 5%;
     padding-right: 5%;
 
-    color: white;
+    color: var(--secondary);
     text-align: justify;
 }
 
@@ -509,8 +532,8 @@ background-color: white;
 
     background:
         linear-gradient(
-            to left, var(--white) 0%,
-            var(--white) 100%
+            to left, var(--secondary) 0%,
+            var(--secondary) 100%
         );
 
     background-size: 0px 0px;
@@ -518,7 +541,7 @@ background-color: white;
     background-repeat: repeat-y;
     transition: background-size .5s;
 
-    color: white;
+    color: var(--secondary);
     text-decoration: none;
 }
 
@@ -527,7 +550,7 @@ background-color: white;
     background-size: 100% 10px;
     animation-direction: reverse;
 
-    color: black;
+    color: var(--primary);
 }
 
 .about-text-h5 {
@@ -542,7 +565,7 @@ background-color: white;
     padding: 5%;
     padding-bottom: 7.5%;
 
-    background-color: white;
+    background-color: var(--secondary);
 }
 
 
@@ -557,7 +580,7 @@ background-color: white;
     padding-top: -.5%;
     padding-bottom: 5%;
 
-    color: black;
+    color: var(--primary);
     text-align: center;
 
     font-size: 50px !important;
@@ -582,8 +605,8 @@ background-color: white;
 
     background:
         linear-gradient(
-            to left, var(--black) 0%,
-            var(--black) 100%
+            to left, var(--primary) 0%,
+            var(--primary) 100%
         );
 
     background-size: 0px 0px;
@@ -591,24 +614,24 @@ background-color: white;
     background-repeat: repeat-y;
     transition: background-size .6s;
 
-    color: white;
+    color: var(--secondary);
     text-decoration: none;
 }
 
 .team-member-div:hover .team-member-name {
-    color: white;
+    color: var(--secondary);
 }
 
 .team-member-div:hover .team-member-title {
-    color: white;
+    color: var(--secondary);
 }
 
 .team-member-div:hover .team-member-contacts {
-    color: white;
+    color: var(--secondary);
 }
 
 .team-member-name {
-    color: black;
+    color: var(--primary);
     font-size: 30px;
     text-align: right;
     font-family: 'Inria Sans', sans-serif !important;
@@ -618,14 +641,14 @@ background-color: white;
     margin-top: -3%;
     margin-bottom: 15%;
 
-    color: #555;
+    color: var(--team_member_title);
     font-size: 14px;
     text-align: right;
     font-family: 'Inria Sans', sans-serif !important;
 }
 
 .team-member-contacts {
-    color: #222;
+    color: var(--team_member_contact);
     font-size: 18px;
     text-decoration: underline;
     font-family: 'Inria Sans', sans-serif !important;
@@ -640,7 +663,7 @@ background-color: white;
     padding: 7.5%;
     padding-top: 17.5vh;
 
-    color: white;
+    color: var(--secondary);
 }
 
 #project-page-proj-code {
@@ -652,8 +675,8 @@ background-color: white;
 
     background:
         linear-gradient(
-            to left, var(--white) 0%,
-            var(--white) 100%
+            to left, var(--secondary) 0%,
+            var(--secondary) 100%
         );
 
     background-size: 0px 0px;
@@ -661,7 +684,7 @@ background-color: white;
     background-repeat: repeat-y;
     transition: background-size .75s;
 
-    color: black;
+    color: var(--primary);
     font-family: 'Inria Sans', sans-serif !important;
 }
 
@@ -673,8 +696,8 @@ background-color: white;
 
     background:
         linear-gradient(
-            to left, var(--white) 0%,
-            var(--white) 100%
+            to left, var(--secondary) 0%,
+            var(--secondary) 100%
         );
 
     background-size: 0px 0px;
@@ -682,14 +705,14 @@ background-color: white;
     background-repeat: repeat-y;
     transition: background-size .75s;
 
-    color: black;
+    color: var(--primary);
     font-family: 'Inria Sans', sans-serif !important;
 }
 
 .proj-page-effect {
 
     background-size: 100% 10px !important;
-    color: black !important;
+    color: var(--primary) !important;
 }
 
 #project-page-proj-text {
@@ -697,7 +720,7 @@ background-color: white;
     max-width: 30vw;
     padding-top: 2.5%;
 
-    color: white;
+    color: var(--secondary);
     text-align: justify;
 
     font-size: 19px;

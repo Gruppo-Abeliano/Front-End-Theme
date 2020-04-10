@@ -19,25 +19,44 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.0.6/jquery.mousewheel.min.js" type="text/javascript" charset="utf-8"></script>
     <script>
+        var number = Math.random() * 1500;
+
+        // PROJECT PAGE START
+        $("#project-page-proj-text").hide();
+
+        setTimeout(function() {
+            $("#project-page-proj-code").addClass("proj-page-effect");
+        }, number + 1100);
+
+        setTimeout(function() {
+            $("#project-page-proj-name").addClass("proj-page-effect");
+        }, number + 1500);
+
+        setTimeout(function() {
+            $("#project-page-proj-text").slideDown(750);
+        }, number + 1750);
+
+        
         $(document).ready(function(){
-
-            $(".proj-col-3").stop().hover(function() {
-
-                $(this).siblings().each(function() {
-                    $(this).css("z-index", "-99999");
-                    $(this).css("border-right", "0px solid transparent");
-                    $(this).stop(true, true).animate({"margin-right": '-=1.1vw'}, 500);
-                });
-
-            }, function(){
-                $(this).siblings().each(function() {
-                    $(this).css("z-index", "0");
-                    $(this).stop(true, true).animate({"margin-right": '+=1.1vw'}, 500);
-                    $(this).delay(500).css("border-right", "1px solid #888");
-                });
+            var totalWidth = 0;
+            $('#infinite-scroll-container').children().each(function(){
+                totalWidth += $(this).outerWidth();
             });
-
+            $('#infinite-scroll-container').css('width', totalWidth);
         });
+
+        $(function() {
+            $('#infinite-scroll').removeClass('hover'); 
+            $("#infinite-scroll").mousewheel(function(event, delta) {
+
+            this.scrollLeft -= (delta * 50);
+            event.preventDefault();
+            });
+            $('#infinite-scroll').addClass('hover');
+        });
+        
+
+        // PROJECT PAGE END
         
 
         $(document).ready(function(){
