@@ -30,9 +30,9 @@
                     <div class="row" id="projects-div">
 
                         <div class="col-1 proj-col-1"></div>
-
-                        <div class="col-10 proj-col-10">
-                            <div class="row">
+                        <!--  -->
+                        <div id="infinite-scroll" class="col-10 proj-col-10" style="overflow:hidden">
+                            <div id="infinite-scroll-container" class="row" >
 
                                 <?php
                                     global $post;
@@ -74,5 +74,24 @@
         </div>
     </div>
 
-        
+    
+    <script>
+        $(document).ready(function(){
+            var totalWidth = 0;
+            $('#infinite-scroll-container').children().each(function(){
+                totalWidth += $(this).outerWidth();
+            });
+            $('#infinite-scroll-container').css('width', totalWidth);
+        });
+
+        $(function() {
+            $('#infinite-scroll').removeClass('hover'); 
+            $("#infinite-scroll").mousewheel(function(event, delta) {
+
+            this.scrollLeft -= (delta * 30);
+            event.preventDefault();
+            });
+            $('#infinite-scroll').addClass('hover');
+        });
+    </script>
 <?php get_footer() ?>

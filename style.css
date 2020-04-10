@@ -387,12 +387,13 @@ body {
 
     transition: background-size 0.35s;
     transition-timing-function: linear;
+    
 
     background-color: black;
     border-right: 1px solid #888;
 }
 
-.proj-col-3:hover {
+.proj-col-3:hover{
 
     top: -4vh;
     min-height: 73vh;
