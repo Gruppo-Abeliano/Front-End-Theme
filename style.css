@@ -1,7 +1,7 @@
 :root {
-    --primary: rgb(0, 0, 0);
-    --secondary: #F28F00;
-    --footbar: rgba(49, 49, 49, 0.623);
+    --primary: #060823;
+    --secondary: #dfefef;
+    --footbar: #101D42;
     --project_border: #F18F01;
     --placeholder: #F18F01;
     --team_member_title: #F18F01;
